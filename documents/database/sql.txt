@@ -1,0 +1,894 @@
+----------------20151019---------------------------
+--1
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_OUT_INFO', 'SF_JD_RESULT', 'funaudit', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_OUT_INFO', 'SF_JD_RESULT', 'funtread', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_APPEND_MATERIAL_NOTICE', 'SF_JD_RESULT', 'funaudit', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_APPEND_MATERIAL_NOTICE', 'SF_JD_RESULT', 'funtread', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_RECEIPT', 'SF_JD_RESULT', 'funaudit', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('SF_RECEIPT', 'SF_JD_RESULT', 'funtread', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+--2
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'TGF', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'TGF_PHONE', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'ENTRUST_CODE', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'NAME', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'VALIDATOR', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'VALIDAT_DATE', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'VALIDAT_OPINION', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'VALIDAT_IS_PASS', 'SF_OUT_INFO', 'SF_OUT_INFO', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'OUT_INFO_REQ_CODE', 'SF_OUT_INFO', 'SF_OUT_INFO_VALIDATE_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'VALIDATE_RESULT', 'SF_OUT_INFO', 'SF_OUT_INFO_VALIDATE_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'REMARK', 'SF_OUT_INFO', 'SF_OUT_INFO_VALIDATE_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'OUT_INFO_TYPE_CODE', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'TI_QU_FANG_SHI', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'NAME', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'QUANTITY', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'UNIT', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'DESCRIPTION', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31051, 31082055, 'PRODUCT_TIME', 'SF_OUT_INFO', 'SF_OUT_INFO_DETAIL', 2);
+
+--3
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'DOC_QUATITY', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'REPORT_TYPE', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'REMARK', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'PHOTOGRAPHER', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'ENTRUST_ID', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'NAME', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'ENTRUST_CODE', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'DOC_TYPE_CODE', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'REMARK', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT_DETAIL', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31094, 31125099, 'WTF', 'SF_JD_DOC_AUDIT', 'SF_JD_DOC_AUDIT', 2);
+
+--4
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'ENTRUST_ID', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'ENTRUST_CODE', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'NAME', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'DOSSIER_TYPE', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'REMARK', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31108, 31139112, 'FILE_ID', 'SF_DOSSIER', 'SF_DOSSIER', 2);
+
+--5
+
+----------------20150921---------------------------
+--1
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'funaudit', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'funtread', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+--2
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'BRIEF', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'ENTRUST_CODE', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JDR', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_ADDRESS', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_DATE', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_METHOD', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_OPINION', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_PROCESS', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_RESULT', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'JD_TARGET', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'NAME', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'REMARK', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'RESULT_TYPE', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'ZC_PERSONS', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+insert into as_wf_activity_field (WF_TEMPLATE_ID, WF_NODE_ID, DATA_ITEM, COMPO_ID, TAB_ID, READ_WRITE)
+values (31079, 31110082, 'ZHU_SU', 'SF_JD_RESULT', 'SF_JD_RESULT', 2);
+
+----------------20150726---------------------------
+--1
+create or replace procedure sp_sf_jiChuZiLiaoJieZhuan(curNd in varchar2) is
+begin
+  --结转as_emp_position
+  delete from as_emp_position where nd=curNd+1;
+  insert into as_emp_position
+  select emp_code, posi_code, org_code, co_code, emp_posi_id, nd+1, sysdate from as_emp_position where nd=curNd;
+
+--结转as_org
+  delete from as_org where nd=curNd+1;
+  insert into as_org
+  select co_code, org_code, org_name, parent_org_code, is_lowest, quic_code, prin_code, linkman, tele, org_id, org_type_code, nd+1, is_need_send_bank, sysdate, SYS_GUID(), trigger_enable from as_org where nd=curNd;
+
+--结转as_org_position
+  delete from as_org_position where nd=curNd+1;
+  insert into as_org_position
+  select co_code, posi_code, org_code, leader_posi_id, org_posi_id, nd+1, sysdate from as_org_position where nd=curNd;
+
+--结转 as_wf_business_superior
+/*delete from as_wf_business_superior where nd=curNd+1;
+insert into as_wf_business_superior
+select id, jun_co_code, jun_org_code, jun_posi_code, jun_emp_code, sup_condition, sup_co_code, sup_org_code, sup_posi_code, sup_emp_code, project_name, description, priority, nd+1 from as_wf_business_superior where nd=curNd;
+*/
+--结转 ma_company
+delete from ma_company where nd=curNd+1;
+insert into ma_company
+select co_code, co_type_code, gb_code, co_name, co_fullna, quic_code, mark, post_code, comm_addr, address, url, link_man, co_clerk, co_leader, fi_leader, loca_tele, director_code, parent_co_code, f_co_code, is_used, f_org_code, is_self, bank_acc, shop_card_no, corp_repr, trade_name, country, province, city, real_co_code, is_lowest, nd+1, fina_level, co_kind, is_pilot, is_need_send_bank, region_code, sysdate, is_need_send_bank_sl, co_type_code_1, can_getbill, getbill_id, can_charge, turn_in_acct, nt_acc_id, nt_acc_name, nt_hesuan_co_code, sys_guid(), trigger_enable, pr_bi_cocode from ma_company where nd=curNd;
+
+--结转 wf_executor_source
+delete  from wf_executor_source where extnd=curNd+1;
+insert into wf_executor_source
+select node_id, executor, source, responsibility, extcocode, extorgcode, extnd+1 from wf_executor_source where extnd=curNd;
+
+--结转 as_wf_business_superior
+delete  from as_wf_business_superior where nd=curNd+1;
+ insert into as_wf_business_superior
+    select newid, jun_co_code, jun_org_code, jun_posi_code, jun_emp_code, sup_condition, sup_co_code, sup_org_code, sup_posi_code, sup_emp_code, project_name, description, priority, curNd+1 from as_wf_business_superior where nd=curNd;
+
+--情况委托单的自动编号
+DELETE FROM AS_NUM_TOOL_NO N WHERE N.NUM_TOOL_ID='SF_ENTRUST_CODE_GEN_ID';
+
+end sp_sf_jiChuZiLiaoJieZhuan;
+
+
+--2
+insert into as_compo_func (COMPO_ID, FUNC_ID, IS_WR_LOG, IS_NEVER_USE, TRANS_DATE)
+values ('SF_ASSIST_FILE', 'fjieZhuanBaseData', 'Y', null, to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into AS_FUNC (FUNC_ID, FUNC_DESC, ORD_INDEX, IS_GRANT_TO_ALL, IS_LIST, SHORTCUT_KEY, IS_CTRL, IS_SHIFT, IS_ALT)
+values ('fjieZhuanBaseData', '结转基础资料', 42, null, 'N', null, null, null, null);
+
+insert into AS_LANG_TRANS (RES_ID, LANG_ID, RES_NA)
+values ('fjieZhuanBaseData', 'C', '结转基础资料');
+
+insert into as_lang_trans (RES_ID, LANG_ID, RES_NA)
+values ('SF_FUNC_fjieZhuanBaseData', 'C', '结转基础资料');
+
+insert into AS_ROLE_FUNC (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DAGL', 'SF_ASSIST_FILE', 'fjieZhuanBaseData', to_date('24-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+----------------20150509---------------------------
+--1
+insert into AS_ROLE_FUNC (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_APPEND_MATERIAL_NOTICE', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into AS_ROLE_FUNC (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into AS_ROLE_FUNC (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into AS_ROLE_FUNC (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+
+----------20150423----------------------------
+--1
+insert into as_role (ROLE_ID, ROLE_NAME, ROLE_DESC, CO_CODE)
+values ('R_SF_DENGJI', '委托数据登记', '用于委托数据登记', '*');
+
+--2
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ASSIST_FILE', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ASSIST_FILE', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ASSIST_FILE', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_CHARGE_STANDARD', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_DOSSIER', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fprintXy', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUST', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_ENTRUSTOR', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_EVALUATION', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_AUDIT', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_DOC_TYPE', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_FEES', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_PERSON', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fprintFb', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fprintZb', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_RESULT', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_JD_TARGET', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fdelete', to_date('01-01-2015 10:10:10', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fedit', to_date('01-01-2015 10:10:10', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fexit', to_date('01-01-2015 10:10:10', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fnew', to_date('01-01-2015 10:10:10', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fsave', to_date('01-01-2015 10:10:10', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MAJOR', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fmanualcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'ftongbu', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'funaudit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'funtread', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_MATERIALS_TRANSFER', 'fwoyaodengji', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_REQ', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_OUT_INFO_TYPE', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fcallback', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fdelete', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fedit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fexit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fnew', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fnewcommit', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fprint', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fprint_preview', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fprn_tpl_set', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fsave', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fshowinstancetrace', to_date('06-01-2015 10:56:15', 'dd-mm-yyyy hh24:mi:ss'));
+
+insert into as_role_func (ROLE_ID, COMPO_ID, FUNC_ID, TRANS_DATE)
+values ('R_SF_DENGJI', 'SF_RECEIPT', 'fwatch', to_date('21-10-2010 16:43:33', 'dd-mm-yyyy hh24:mi:ss'));
+
+----------20150409----------------------------
+--1
+-- Add/modify columns 
+alter table SF_MATERIALS add quantity2 INTEGER;
+-- Add comments to the columns 
+comment on column SF_MATERIALS.quantity2
+  is '数量2';
+  
+  --2
+  
+delete from as_lang_trans l where l.res_id like 'SF_MATERIALS_QUANTITY';
+
+  insert into as_lang_trans (RES_ID, LANG_ID, RES_NA)
+values ('SF_MATERIALS_QUANTITY', 'C', '份');
+
+insert into as_lang_trans (RES_ID, LANG_ID, RES_NA)
+values ('SF_MATERIALS_QUANTITY2', 'C', '张');
+
+--------------------20150202---------------
+--1
+
+insert into as_tab_col (TAB_ID, DATA_ITEM, ORD_INDEX, DATA_ITEM_DESC, DATA_ITEM_NA, DATA_TYPE, DATA_LEN, DEC_LEN, F_REF_NAME, F_FIELD, IS_SAVE, VAL_SET_ID, IS_FPK, IS_USED, IS_PRE, IS_PK, IS_NULL, IS_NUM, IS_LIST, IS_SELE, DFLT_VAL, ADD_DATE, DB_VER_NO, IS_PAGE_FIELD, MIN_VALUE, MAX_VALUE, MIN_LENGTH, IS_EFFECT, VS_EFFECT_TABLE, URL, IS_KILO_STYLE, IS_TREEVIEW, IS_ONLYLEAF, EDIT_BOX_TYPE, IS_ORDER)
+values ('SF_EVALUATION', 'PROCESS_INST_ID', 0, '工作流实例号', '工作流实例号', 'NUMBER', 22, null, null, null, 'Y', null, null, 'Y', null, null, 'Y', 'N', 'Y', 'Y', null, null, null, 'N', null, null, null, null, null, null, null, 'N', 'N', null, null);
