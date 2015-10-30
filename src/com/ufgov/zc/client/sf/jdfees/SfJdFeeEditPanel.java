@@ -323,7 +323,8 @@ public class SfJdFeeEditPanel extends AbstractMainSubEditPanel {
             || "fees.needFee".equals(editor.getFieldName()) || "cashierName".equals(editor.getFieldName())
             || "fees.entrustorName".equals(editor.getFieldName()) || "fees.majorName".equals(editor.getFieldName())
             || "fees.jdFzrName".equals(editor.getFieldName()) || "fees.jdFhrName".equals(editor.getFieldName())
-            || "cashDate".equals(editor.getFieldName())) {
+          //|| "cashDate".equals(editor.getFieldName())
+          ) {
             editor.setEnabled(false);
           } else {
             editor.setEnabled(true);

@@ -192,6 +192,7 @@
 		   		E.nd=#nd#
 		   	</isNotNull>
 	   </isNull>
+	   order by E.ENTRUST_ID desc
   </select>
   
   <select id="selectByEntrustId" parameterClass="java.math.BigDecimal" resultMap="BaseResultMap">

@@ -90,7 +90,8 @@
             empCode ="<%=empCode%>" \
             empName ="<%=empName%>"\
 			urlArray ="<%=urlArray%>"\
-	    scriptable = false	    
+	    scriptable = false
+	    type="application/x-java-applet;version=1.6">
 	</embed>    
     </comment>
 </object>

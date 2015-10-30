@@ -12,8 +12,8 @@
     <result column="YI_JIAO_DESC" jdbcType="VARCHAR" property="yiJiaoDesc" />
     <result column="JIE_SHOU_DESC" jdbcType="VARCHAR" property="jieShouDesc" />
     <result column="REMARK" jdbcType="VARCHAR" property="remark" />
-    <result column="CL_QUALITY" jdbcType="DECIMAL" property="clQuality" />
-    <result column="YB_QUALITY" jdbcType="DECIMAL" property="ybQuality" />
+    <result column="CL_QUALITY" jdbcType="BIGINT" property="clQuality" />
+    <result column="YB_QUALITY" jdbcType="BIGINT" property="ybQuality" />
     <result column="STATUS" jdbcType="VARCHAR" property="status" />
     <result column="ND" jdbcType="DECIMAL" property="nd" />
     <result column="PROCESS_INST_ID" jdbcType="DECIMAL" property="processInstId" />
@@ -92,7 +92,7 @@
     values (#transferId:DECIMAL#, #entrustId:DECIMAL#, #yiJiaoRen:VARCHAR#, 
       #jieShouRen:VARCHAR#, #yiJiaoDate:DATE#, #jieShouDate:DATE#, 
       #yiJiaoDesc:VARCHAR#, #jieShouDesc:VARCHAR#, #remark:VARCHAR#, 
-      #clQuality:DECIMAL#, #ybQuality:DECIMAL#, #status:VARCHAR#, 
+      #clQuality:BIGINT#, #ybQuality:BIGINT#, #status:VARCHAR#, 
       #nd:DECIMAL#, #processInstId:DECIMAL#, #entrustCode:VARCHAR#, 
       #name:VARCHAR#, #materialsDesc:VARCHAR#, #completionDesc:VARCHAR#, 
       #parentId:DECIMAL#)
@@ -107,8 +107,8 @@
       YI_JIAO_DESC = #yiJiaoDesc:VARCHAR#,
       JIE_SHOU_DESC = #jieShouDesc:VARCHAR#,
       REMARK = #remark:VARCHAR#,
-      CL_QUALITY = #clQuality:DECIMAL#,
-      YB_QUALITY = #ybQuality:DECIMAL#,
+      CL_QUALITY = #clQuality:BIGINT#,
+      YB_QUALITY = #ybQuality:BIGINT#,
       STATUS = #status:VARCHAR#,
       ND = #nd:DECIMAL#,
       PROCESS_INST_ID = #processInstId:DECIMAL#,

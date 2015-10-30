@@ -45,12 +45,13 @@
 <body TOPMARGIN ="0" LEFTMARGIN ="0" >
 
 <body TOPMARGIN ="0" LEFTMARGIN ="0" >
-<object classid="clsid:CAFEEFAC-0016-0000-0019-ABCDEFFEDCBA" WIDTH="100%" HEIGHT="100%" >
+<object classid="clsid:CAFEEFAC-0016-0000-0019-ABCDEFFEDCBA" codebase="<%=webRoot%>/java/jre-6u19-windows-i586.exe#Version=6,0,190,4" WIDTH="100%" HEIGHT="100%" >
     <PARAM NAME="CODE" VALUE="com.ufgov.zc.client.applet.local.LocalResourceApplet.class" >
     <PARAM NAME="CODEBASE" VALUE="<%=webRoot%>/localApplet" ><PARAM NAME="cache_option" VALUE="Plugin">
     <PARAM NAME="ARCHIVE" VALUE="localApplet.jar">
     <PARAM name="cache_archive" value="localApplet.jar">
     <PARAM NAME="cache_version" VALUE="3.2">
+    <param name="type" value="application/x-java-applet;jpi-version=1.6.0_19">
     <param name="scriptable" value="false">
     <PARAM name="java_arguments" value="-Xms80m -Xmx1000m -Djnlp.packEnabled=true">
     <PARAM NAME="panelClassName" VALUE="<%=panelClassName%>">
@@ -70,6 +71,7 @@
 	<PARAM NAME="urlArray" VALUE="<%=urlArray%>">
     <comment>
 	<embed
+            type = "application/x-java-applet;jpi-version=1.6.0_19" \
             CODE = "com.ufgov.zc.client.applet.ZcApplet.class" \
             JAVA_CODEBASE = "<%=webRoot%>/applet" \
             ARCHIVE = "com.ufgov.smartclient.component_1.0.0.jar," \
@@ -90,7 +92,8 @@
             empCode ="<%=empCode%>" \
             empName ="<%=empName%>"\
 			urlArray ="<%=urlArray%>"\
-	    scriptable = false	    
+	    scriptable = false
+	    pluginspage = "<%=webRoot%>/java/jre-6u19-windows-i586.exe#Version=6,0,190,4">
 	</embed>    
     </comment>
 </object>

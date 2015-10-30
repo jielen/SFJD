@@ -16,6 +16,7 @@ public class SfEntrustFM {
     fieldMap.put("BRIEF", "brief");
     fieldMap.put("CODE", "code");
     fieldMap.put("ENTRUSTOR_ID", "entrustorId");
+    fieldMap.put("ENTRUSTOR_NAME", "entrustor.name");//方便工作流上能进行定义修改属性
     fieldMap.put("ENTRUST_ID", "entrustId");
     fieldMap.put("INPUTOR", "inputor");
     fieldMap.put("INPUT_DATE", "inputDate");
@@ -28,6 +29,7 @@ public class SfEntrustFM {
     fieldMap.put("JD_ORG", "jdOrg");
     fieldMap.put("JD_REQUIRE", "jdRequire");
     fieldMap.put("JD_TARGET_ID", "jdTargetId");
+    fieldMap.put("JD_TARGET_NAME", "jdTarget.name");//方便工作流上能进行定义修改属性
     fieldMap.put("MAJOR_CODE", "majorCode");
     fieldMap.put("NAME", "name");
     fieldMap.put("ND", "nd");
